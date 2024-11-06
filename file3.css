@@ -1,0 +1,251 @@
+/* Styles */
+:root {
+    --pink: #FFB6C1;
+    --blue: #87CEEB;
+    --yellow: #FFF8DC;
+    --gray: #DCDCDC;
+}
+
+#predictionForm {
+    background-color: #fff; /* White background for the form */
+    border: 2px solid red; /* Red border for the square effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    max-width: 500px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    font-family: Arial, sans-serif; /* Font for the form */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--yellow);
+}
+#headingg {
+    text-align: center;         /* Center the text */
+    text-decoration:dotted; /* Underline the text */
+    text-transform: uppercase;  /* Convert text to uppercase */
+    font-weight: bold;         /* Make the text bold */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.required {
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for color changes */
+}
+
+
+#generateBtn {
+    background-color: var(--blue);
+    color: white;
+}
+
+#generateBtn:active {
+    background-color: #5f9ec2; /* Darker blue when clicked */
+}
+
+#resetBtn {
+    background-color: var(--gray);
+}
+
+#resetBtn:active {
+    background-color: #b8b8b8; /* Darker gray when clicked */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+}
+
+.chart {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+.chart table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--gray);
+}
+
+.chart th, .chart td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.chart .highlight {
+    font-weight: bold;
+    color: white;
+}
+
+.chart .boy {
+    background-color: var(--blue);
+}
+
+.chart .girl {
+    background-color: var(--pink);
+}
+
+
+
+
+#enterbirth,
+#enterconceptiondate {
+    font-size: 12px; /* Smaller font size */
+    color: red; /* Red color */
+    font-family: Arial, sans-serif; /* Different font, you can change it to any font you like */
+    display: block; /* Ensures labels are displayed as block elements */
+    margin-top: 5px; /* Space between the label and the input */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+
+
+
+
+
+.popup {
+    border: 2px solid red; /* Red border for the square effect */
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    display: none; /* Initially hidden */
+}
+
+.popup.active {
+    display: block; /* Show when active class is added */
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    color:red;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Confetti animation */
+@keyframes confetti {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

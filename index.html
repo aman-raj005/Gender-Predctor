@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Gender Predictor</title>
+    <link rel="stylesheet" href="file3.css">
+       <!-- Link to SVG favicon -->
+       <link rel="icon" href="baby-solid.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <h1 id="headingg">Baby Gender Predictor</h1>
+
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="name">Full Name </label>
+                <input type="text" id="name"placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="form-group"id="calculateAge">
+                <label for="birthDate">Calculate Time from  Birth Date to Age at Conception<span class="required">*</span></label>
+                <input type="date" id="birthDate" placeholder="Date Of Birth">
+                <label for="birthDate"id="enterbirth">Enter your date of birth  ☝️ :</label>
+                <input type="date" id="conceptionDate">
+                <label for="conceptionDate"id="enterconceptiondate">Enter Date at Conception ☝️ :</label>
+                 <button type="button"  id="calculateAge">Ready</button>
+                
+            </div>
+
+
+            <div class="buttons">
+                <button type="submit" id="generateBtn">Generate Prediction</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+        </form>
+
+        <div class="result" id="result"></div>
+
+     
+
+        <div class="chart">
+            <h2 id="headingg">Chinese Pregnancy Calendar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Age</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                    </tr>
+                </thead>
+                <tbody id="chartBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="popup" id="welcomePopup">
+        <h2>Welcome to Baby Gender Predictor</h2>
+        <p>This tool helps predict your baby's gender based on the lunar calendar method. Here's how to use it:</p>
+        <ol>
+            <li>Enter your full name</li>
+            <li>Input your age at conception (years and months)</li>
+            <li>Optionally, use the date calculator if you're unsure about your age</li>
+            <li>Add your address (optional)</li>
+            <li>Click "Generate Prediction" to see the result</li>
+        </ol>
+        <button class="close-btn">X</button>
+    </div>
+
+    <div class="popup" id="secondPopup">
+        <h2>Website Created by <b>AMAN RAJ</b>  </h2>
+        <p>Directed by <b>KOMAL SINGH</b></p>
+        <a href="https://aman-raj-005.netlify.app/" target="_blank">Connect with Aman</a>
+        <button class="close-btn">X</button>
+    </div>
+     
+     
+
+    <div class="form-group">
+        <label for="age">Your Age at Conception <span ></span> (18-45)</label>
+        <input type="number" id="age" min="18" max="45" placeholder="Total Years from Your Birth to Your Conception,   Years (18-49) "required>
+        <label for="age"id="enterconceptiondate">Your Age at Your Conception in Years ☝️ :</label>
+        <input type="number" id="month" min="1" max="12" placeholder="Month (1-12)" required>
+        <label for="month"id="enterconceptiondate"> Only Months (Like  1 , 2 , 3 ) ☝️ :</label>
+
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label for="address">Give Your Valuable Feedback</label>
+        <textarea id="address" rows="3" placeholder="Enter your feedback here..." ></textarea>
+        <button type="submit">Submit</button>
+    </div>
+    
+
+
+    <div class="footer">
+        <p>Website Created by <b>AMAN RAJ</b> , Directed by <b>KOMAL SINGH</b></p>
+        <a href="https://aman-raj-005.netlify.app/" target="_blank">Connect with Aman</a>
+    </div>
+
+    <script src="file3.js"></script>
+</body>
+</html>
